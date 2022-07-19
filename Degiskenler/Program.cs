@@ -4,15 +4,18 @@ namespace Degiskenler
 {
     class Program
     {
+        private const double V = 1.5;
+
         static void Main(string[] args)
         {
             // Değişkenlerin her zaman bir değeri olmak zorundadır. Yoksa null tanımlanmalıdır. Ataması yapılmayan değişkenler kullanıldığında derleyici hata verir.
-            int value = 10;
-
+            int value = 100;
+            System.Console.WriteLine(value);
 
             // case-Sensitive duyarlıdır
             string name = null;
             string Name = null;
+            System.Console.WriteLine(Name);
 
 
             // Değişkn isimleri Rakam ile başlayamaz
@@ -22,6 +25,7 @@ namespace Degiskenler
             // Değişken isimleri boşluk içeremez. Yalnızca "_" ifadesi kullanılabilir.
                 //   string name surname = null;  !hata verir || Doğrusu aşağıda
             string name_surname = null; 
+            System.Console.WriteLine(name_surname);
 
 
             // Değişken isimlerinin arasında matematiksel ifadeler yani işlem operatörleri kullanılamaz.
@@ -41,32 +45,53 @@ namespace Degiskenler
             ushort values_4 = 20;    // 2 byte
 
             Int16 values_5 = 2;       // 2 byte
+
+            System.Console.WriteLine(values + values_2 + values_3 + values_4 + values_5);
             int values_6 = 2;         // 4 byte
             Int32 values_7 = 2;       // 4 byte
             Int64 values_8 = 2;        // 8 byte
 
+            System.Console.WriteLine(values_6 + values_7 + values_8 );
+
             uint values_9 = 2;        // 4 byte
+            System.Console.WriteLine(values_9);
             long values_10 = 2;       // 8 byte
+            System.Console.WriteLine(values_10);
             ulong values_11 = 2;       // 8 byte
+            System.Console.WriteLine(values_11);
 
             // Ondalıklı Sayılar
-            float values_12 = 1.5;     // 4 byte
+           // float values_12 = 2.1;     // 4 byte
             double values_13 = 2.75;   // 8 byte
-            decimal values_14 = 9.22;  // 16 byte
+            System.Console.WriteLine(values_13);
 
+           // decimal values_14 = 200.90;  // 16 byte
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
             
             
             char values_15 = '1';   // 2 byte
+            System.Console.WriteLine(values_15);
 
             // Stringlerle işlem yapmak veritabanında maliyetli işlemlerdir :)
             string values_16 = "I am Koca";   // Sınırsız
-
+            System.Console.WriteLine(values_16);
 
             // Boolean İfadeler
 
             bool values_17 = false;
             bool values_18 = true;
+
+            System.Console.WriteLine(values_17 + " " + values_18);
 
 
             // O an ki tarih ve saati DateTime kütüphanesini kullanarak ekrana bastım.
@@ -90,10 +115,12 @@ namespace Degiskenler
             string str1 = string.Empty;  // boş değer
 
             str1 = "Sayit Sami Koca";
-            string name = "Sayit Sami";
+            string name_2 = "Sayit Sami";
             string surname = "Koca";
 
             string fullName = name + " " + surname;
+
+            System.Console.WriteLine(name_2);
 
 
             // integer tanımlama işlemleri
@@ -105,7 +132,7 @@ namespace Degiskenler
             // Boolean
 
             bool boolValue = 2<1; // false değer döner.
-
+            System.Console.WriteLine(boolValue);
 
             // Değişken Dönüşümleri
 
@@ -126,7 +153,7 @@ namespace Degiskenler
 
             // Date Time
 
-            string dateTime = DateTime.Now.ToString("dd.MM.yyyy");
+            string dateTime0 = DateTime.Now.ToString("dd.MM.yyyy");
             Console.WriteLine(dateTime); // Yukarıdaki formatta getirir.
 
 
