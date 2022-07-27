@@ -68,17 +68,6 @@ namespace Degiskenler
            // decimal values_14 = 200.90;  // 16 byte
 
             
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
             char values_15 = '1';   // 2 byte
             System.Console.WriteLine(values_15);
 
