@@ -62,15 +62,6 @@ namespace Donguler_for_loop
                 }
                 Console.WriteLine(i);
             }
-
-            for (;;)
-            {
-                if (i==4)
-                {
-                    continue;
-                }
-                Console.WriteLine(i);
-            }
         }
 
     }
